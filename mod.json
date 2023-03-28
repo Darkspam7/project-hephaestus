@@ -1,0 +1,10 @@
+{
+"name":"projecthepeastus",
+"displayName": "Project Hepheastus",
+"author": "darkspam7",
+"description": "wip",
+"version": "alpha 0.01",
+"minGameVersion": "142",
+"dependencies": [ ],
+"hidden": false
+}
