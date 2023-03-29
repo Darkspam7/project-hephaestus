@@ -1,9 +1,0 @@
-{
-    "localizedName": "Tryhard",
-    "difficulty": 4,
-    "planet": "Tryhard",
-    "sector": 0,
-    "allowLaunchLoadout": true,
-    "addStartingItems": true,
-    "alwaysUnlocked": true
-  }
