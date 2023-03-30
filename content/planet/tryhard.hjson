@@ -1,45 +1,55 @@
+localizedName: Cangirus
+description: A lush planet that has land and water.
+alwaysUnlocked: true
 mesh: {
   type: NoiseMesh
-  planet: Tryhard
-  seed: 93
-  divisions: 4
-  color1: 000080
-  color2: 0000FF
-  colorScale: 2
-  radius: 0.8
-  octaves: 5
+  planet: cangirus
+  seed: 69
+  divisions: 5
+  color1: 4b64a9
+  color2: 59b36a
+  radius: 1.2
+  octaves: 4
   persistence: 1
-  scale: 1
-  mag: 1.5
+  scale: 0.75
+  mag: 1
+}
+#cloudMesh: {}
+defaultEnv: 1
+generator: {
+  type: PlanetGenerator
+  min: 120
+  max: 120
+  radMin: 480
+  radMax: 480
+  seed: 69420
+  berylChance: 0
 }
 sectorSize: 1
-generator: {
-
-}
-orbitSpacing: 10
-orbitRadius: 27
-raradius: 0.8
-minZoom: 1
-maxZoom: 4
+allowLaunchSchematics: true
+allowLaunchLoadout: true
+allowSectorInvasion: true
+prebuildBase: true
+startSector: 0
+orbitSpacing: 4
+radius: 1.2
+minZoom: 1.5
 drawOrbit: true
 atmosphereRadIn: 0
 atmosphereRadOut: 0.3
 accessible: true
+orbitRadius: 24
 updateLighting: true
-sectorSeed: 23
-bloom: true
+sectorSeed: 69420
+bloom: false
 visible: true
-atmosphereColor: 008080
-iconColor: 008080
+atmosphereColor: 5992af
+iconColor: 4b64a9
 hasAtmosphere: true
-allowSectorInvasion: false
 allowWaveSimulation: true
 clearSectorOnLose: true
-allowLaunchSchematics: true
 allowWaves: true
 defaultCore: core-shard
 parent: sun
-alwaysUnlocked: true
-hiddenItems: [
-    scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium, sand, metaglass, beryllium, tungsten, carbide
-]
+solarSystem: sun
+launchCandidates: []
