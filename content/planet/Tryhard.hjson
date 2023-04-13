@@ -8,7 +8,7 @@ mesh: {
   divisions: 5
   color1: 000080
   color2: 0000FF
-  radius: 1.5
+  radius: 2
   octaves: 4
   persistence: 1
   scale: 1

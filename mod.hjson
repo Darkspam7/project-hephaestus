@@ -4,7 +4,7 @@
 "author": "darkspam7",
 "description": "wip",
 "version": "alpha 0.01",
-"minGameVersion": "142",
+"minGameVersion": "143.1",
 "dependencies": [ ],
 "hidden": false
 }
