@@ -53,3 +53,4 @@ defaultCore: core-shard
 parent: sun
 solarSystem: sun
 launchCandidates: []
+hidden: false
