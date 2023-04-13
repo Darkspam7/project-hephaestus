@@ -41,7 +41,7 @@ accessible: true
 orbitRadius: 24
 updateLighting: true
 sectorSeed: 69420
-bloom: false
+bloom: true
 visible: true
 atmosphereColor: 00FFFF
 iconColor: 008080
