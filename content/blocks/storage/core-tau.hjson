@@ -7,7 +7,7 @@ unitType: alpha
 unitCapModifier: 4
 thrusterLength: 15
 requirements: [
-  cooper/100
+  metal-shard/100
 ]
 research: {
     root: true
