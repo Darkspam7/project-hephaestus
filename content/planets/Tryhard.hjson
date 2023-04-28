@@ -37,7 +37,7 @@ allowWaveSimulation: true
 clearSectorOnLose: true
 allowLaunchSchematics: true
 allowWaves: true
-defaultCore: core-shard
+defaultCore: core-tau
 parent: sun
 alwaysUnlocked: true
 hiddenItems: [
