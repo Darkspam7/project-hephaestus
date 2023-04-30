@@ -1,6 +1,6 @@
 {
     type: "mech",
-    controller: "BuilderAI",
+    controller: "GroundAI",
     isEnemy: false,
 
     mechSideSway: 0
@@ -14,13 +14,7 @@
     flying: false,
     omniMovement: true,
     hitSize: 2,
-    itemCapacity: 0,
-
-    buildSpeed: 0,
-    buildRange: 100,
-
-    canBoost: true,
-    boostMultiplier: 0.3,
+    itemCapacity: 0
 
     canAttack: true,
     mineSpeed: 0,
@@ -47,7 +41,7 @@
                 type: "BasicBulletType",
                 damage: 30,
                 speed: 3,
-                lifetime: 20,
+                lifetime: 30,
                 collidesTeam: true,
                 healPercent: 0,
                 frontColor: CC0000,
