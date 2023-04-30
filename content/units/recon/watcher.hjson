@@ -11,7 +11,7 @@ itemCapacity: 0
 outlineColor: 000000
 weapons: [
   {
-    y: 
+    y: 4
     x: 0
     reload: 40
     bullet: { 
