@@ -1,0 +1,8 @@
+gas: false
+name: "blaze"
+color: "a1dd1a"
+temperature: 0.1
+flammability: 2
+heatCapacity: 0
+viscosity: 0.5
+explosiveness: 0.99
