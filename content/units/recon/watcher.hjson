@@ -1,6 +1,6 @@
 type: mech
 speed: 2
-accel: 0
+accel: 0.1
 drag: 0
 hitSize: 1
 range: 112.5
