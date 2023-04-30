@@ -1,17 +1,18 @@
-speed: 1
+type: mech
+speed: 3
 accel: 0.1
 drag: 0.05
-hitSize: 5
+hitSize: 1
 range: 112.5
 flying: false
 health: 90
 engineOffset: 2
-itemCapacity: 5
+itemCapacity: 0
 outlineColor: 000000
 weapons: [
   {
     y: 2
-    x: 10
+    x: 0
     reload: 30
     bullet: { 
       damege: 30
