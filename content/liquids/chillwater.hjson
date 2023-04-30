@@ -6,3 +6,4 @@ flammability: 0
 heatCapacity: 1
 viscosity: 0.25
 explosiveness: 0
+description: A liquid coolant used by machines to regulate internal functions.
