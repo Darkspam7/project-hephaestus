@@ -1,26 +1,58 @@
-type: mech
-speed: 2
-accel: 0.1
-drag: 0
-hitSize: 1
-range: 112.5
-flying: false
-health: 90
-engineOffset: 2
-itemCapacity: 0
-outlineColor: 000000
-weapons: [
-  {
-    y: 4
-    x: 0
-    reload: 40
-    bullet: { 
-      damege: 30
-      speed: 3
-      lifetime: 45
-      frontColor: cc0000
-      trailColor: 990000
-      trailLength: 2
-    }
-  }
-]
+{
+    type: "mech",
+    controller: "BuilderAI",
+    isEnemy: false,
+
+    mechSideSway: 0
+    mechStepShake: 4
+    mechStepParticles: true,
+    legSpeed: 0.5,
+
+    health: 90,
+    speed: 1.5,
+    drag: 1.25,
+    flying: false,
+    omniMovement: true,
+    hitSize: 2,
+    itemCapacity: 0,
+
+    buildSpeed: 0,
+    buildRange: 100,
+
+    canBoost: true,
+    boostMultiplier: 0.3,
+
+    canAttack: true,
+    mineSpeed: 0,
+    mineTier: 0,
+    mineFloor: true,
+    mineWalls: true,
+
+    coreUnitDock: true,
+    createScorch: false,
+
+    weapons: [
+        {
+            name: "laser-eye",
+            aiControllable: false,
+            top: false,
+            x: 0,
+            y: 3,
+            shootY: 2,
+            reload: 25,
+            shake: 0,
+            alternate: false,
+            mirror: false,
+            bullet: {
+                type: "BasicBulletType",
+                damage: 30,
+                speed: 3,
+                lifetime: 20,
+                collidesTeam: true,
+                healPercent: 0,
+                frontColor: CC0000,
+                backColor: 990000
+            }
+        }
+    ]
+}
