@@ -1,7 +1,6 @@
 {
     type: "mech",
     controller: "GroundAI",
-    isEnemy: false,
 
     mechSideSway: 0
     mechStepShake: 4
@@ -13,23 +12,13 @@
     drag: 1.25,
     flying: false,
     omniMovement: true,
-    hitSize: 2,
+    hitSize: 6,
     itemCapacity: 0
 
     canAttack: true,
-    mineSpeed: 0,
-    mineTier: 0,
-    mineFloor: true,
-    mineWalls: true,
-
-    coreUnitDock: true,
-    createScorch: false,
 
     weapons: [
         {
-            name: "laser-eye",
-            aiControllable: false,
-            top: false,
             x: 0,
             y: 3,
             shootY: 2,
