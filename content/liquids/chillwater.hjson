@@ -1,7 +1,7 @@
 gas: false
 name: "chillwater"
 color: "9fc5e8"
-temperature: 0
+temperature: 0.10
 flammability: 0
 heatCapacity: 1
 viscosity: 0.25

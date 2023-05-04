@@ -2,7 +2,7 @@
     type: "mech",
     controller: "GroundAI",
 
-    health: 90,
+    health: 130,
     speed: 1.5,
     drag: 1.25,
     flying: false,
@@ -23,10 +23,9 @@
             mirror: false,
             bullet: {
                 type: "BasicBulletType",
-                damage: 30,
-                speed: 3,
-                lifetime: 30,
-                collidesTeam: true,
+                damage: 50,
+                speed: 4,
+                lifetime: 40,
                 healPercent: 0,
                 frontColor: CC0000,
                 backColor: 990000
