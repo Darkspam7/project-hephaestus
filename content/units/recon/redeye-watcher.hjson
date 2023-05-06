@@ -1,0 +1,36 @@
+{
+    type: "mech",
+    controller: "GroundAI",
+
+    health: 120,
+    speed: 1.6,
+    drag: 1.25,
+    flying: false,
+    omniMovement: true,
+    hitSize: 2,
+    itemCapacity: 0
+
+    canAttack: true,
+
+    weapons: [
+        {
+            x: 0,
+            y: 3,
+            shootY: 2,
+            reload: 25,
+            shake: 0,
+            alternate: false,
+            mirror: false,
+            bullet: {
+                type: "BasicBulletType",
+                damage: 60,
+                speed: 6,
+                lifetime: 40,
+                collidesTeam: true,
+                healPercent: 0,
+                frontColor: CC0000,
+                backColor: 990000
+            }
+        }
+    ]
+}
