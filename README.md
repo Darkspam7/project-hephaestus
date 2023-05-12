@@ -1,5 +1,14 @@
 # project Hepheastus
 ![image](https://user-images.githubusercontent.com/121695521/228210937-e46f652d-abc1-44f1-a628-3219b026648c.png)
+
+this mod is based on games:
+
+Horizon Zero Dawn
+
+Horizon Forbidden west
+
+Horizon Zero Dawn Frozen Wilds
+
 mod contain:
 
 units - 3
