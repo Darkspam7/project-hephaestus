@@ -2,9 +2,31 @@
 "name":"projecthepeastus",
 "displayName": "Project Hepheastus",
 "author": "darkspam7",
-"description": "wip",
-"version": "alpha 0.01",
-"minGameVersion": "143.1",
+"description": "mod contain:
+
+units - 3
+
+blocks - 1
+
+planets - 1
+
+items - 4
+
+sectors - 1
+
+in full release will contain:
+
+units - 88
+
+blocks - >88
+
+items - 9
+
+planets - 1
+
+sectors - >1",
+"version": "alpha 0.02.0",
+"minGameVersion": "144.1",
 "dependencies": [ ],
 "hidden": false
 }
