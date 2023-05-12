@@ -27,7 +27,7 @@ units - 88
 
 blocks - >88
 
-items - 11
+items - 12
 
 planets - 1
 
