@@ -1,0 +1,39 @@
+type: "legs",
+controller: "BulderAI",
+flying: false,
+isEnemy: false,
+targetPriority: -2,
+hitSize: 10,
+health: 100,
+speed: 1.25,
+drag: 1,
+omniMovement: true,
+itemCapacity: 100,
+buildSpeed: 1,
+buildBeamOffset: 1,
+mineSpeed: 5,
+mineTier: 1,
+outlineColor: 000000,
+weapons: [
+  {
+    type: RepairBeamWeapon
+    reload: 20
+    x: 0
+    y: 1
+    top: false
+    reload: 10
+    repairSpeed: 0.05
+    fractionRepairSpeed: 0.001
+    mirror: true
+    targetUnits: false
+    targetBuildings: true
+    autoTarget: false
+    controllable: true
+    laserColor: accent
+    healColor: accent
+
+    bullet: {
+      maxRange: 60
+    }
+  }
+]
