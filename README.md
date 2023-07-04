@@ -34,3 +34,4 @@ planets - 1
 sectors - >1
 
 autor: Darkspam7
+made by: Pandora team

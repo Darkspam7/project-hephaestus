@@ -1,45 +1,166 @@
-mesh: {
-  type: NoiseMesh
-  planet: Tryhard
-  seed: 59
-  divisions: 4
-  color1: 000080
-  color2: 008000
-  colorScale: 2
-  radius: 1
-  octaves: 5
-  persistence: 1
-  scale: 1
-  mag: 1.5
-}
-sectorSize: 1
-generator: {
+//earthlike(?) planet, name is an easter egg referencing v6 exotic
+//also an example
 
+//generator - necessary to prevent crashes, even if you do not use numbered sectors
+//also accepts just doing generator: AsteroidGenerator
+//also these numbers are funny and i have no idea how they precisely work
+generator: {
+  type: AsteroidGenerator
+  berylChance: 0.45
+  iceChance: 0.15
+  ferricChance: 0.55
+  stoneChance: 2
+  radMin: 1500
+  radMax: 1500
+  berylliumScale: 4
+  copperScale: 0.6
+  scale: 25
+  mag: 0.5
+  thresh: 0.9
+  fscl: 30
+  fper: 0.4
 }
-orbitSpacing: 12
-orbitRadius: 25
-raradius: 0.8
-minZoom: 1
-maxZoom: 4
-drawOrbit: true
-atmosphereRadIn: 0
-atmosphereRadOut: 1
-accessible: true
-updateLighting: true
-sectorSeed: 0
-bloom: true
-visible: true
-atmosphereColor: 008080
-iconColor: 323a19
-hasAtmosphere: true
-allowSectorInvasion: false
-allowWaveSimulation: true
-clearSectorOnLose: true
-allowLaunchSchematics: true
-allowWaves: true
-defaultCore: core-tau
+//sector count - larger numbers mean exponentially more sectors, may crash above 4
+sectorSize: 3.1
+//terrain generation seed the planet uses for its sectors
+sectorSeed: -4
+//sector to start on - probably make this a preset sector
+startSector: 23
+//parent to orbit around and follow
 parent: sun
-alwaysUnlocked: true
-hiddenItems: [
-    scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium, sand, metaglass, beryllium, tungsten, carbide
+//icon colour
+iconColor: 63ad7a
+//radius from the planet's "surface" that the atmosphere blur begins
+atmosphereRadIn: 0
+//radius where it fades away - this can have visual issues if above 0.25
+atmosphereRadOut: 0.35
+//colour of the atmosphere
+atmosphereColor: 3898a1
+//orbit radius, measured in units i do not know
+orbitRadius: 32
+//angle of the starting position of the orbit, so that all planets are not in the same line 
+orbitOffset: 140
+//time taken to complete one full orbit, in seconds
+orbitTime: 12000
+//time in ticks that it takes for one day to pass on the planet
+rotateTime: 5000
+//add tidalLock: true and updateLighting: false to make a planet's daylight not move
+//whether this planet can be selected, ever
+accessible: false
+//whether to allow launching to numbered sectors - set to false for erekir sector behaviour
+allowLaunchToNumbered: false
+//visual mesh made of hexagons - note that JSON only supports NoiseMesh and HexSkyMesh
+//use objects {} to make a single mesh, and the below format to create multiple
+mesh: [
+  {
+    //a two colour mesh type
+    type: NoiseMesh
+    //number of hexagons - like sectors, this is exponential, so beware of frying your GPU (although your GPU can handle way more hexagons here)
+    divisions: 5
+    //mesh size - 1 is serpulo
+    radius: 0.91
+    //first colour to use 
+    color1: 596ab8
+    //second
+    color2: 596ab8
+    //mesh shape values - just mess around with these until they stop exploding, i still do not know how they work
+    octaves: 1
+    persistence: 0.01
+    scale: 0.01
+    mag: 1
+    //these control how the two colours behave on the mesh
+    coct: 1
+    cper: 1
+    cscl: 1
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 6
+    radius: 0.945
+    color1: 6aa95e
+    color2: 80cb71
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.7
+    mag: 1
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 6
+    radius: 0.83
+    color1: 7a7a7a
+    color2: 7a7a7a
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.7
+    mag: 2.2
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 6
+    radius: 0.74
+    color1: d1efff
+    color2: d1efff
+    octaves: 4.6
+    persistence: 0.9
+    scale: 0.7
+    mag: 3.3
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+  {
+    type: NoiseMesh
+    divisions: 6
+    radius: 0.925
+    color1: a6896f
+    color2: d3ae8d
+    octaves: 4.6
+    persistence: 0.65
+    scale: 0.6
+    mag: 1
+    coct: 4
+    cper: 1
+    cscl: 1.8
+    cthresh: 1
+  }
+]
+//mesh to use for drawing the clouds, essentially just a second mesh
+cloudMesh: [
+  {
+    type: HexSkyMesh
+    //rotate speed 
+    speed: 3
+    divisions: 6
+    //this radius value is based on the planet "surface", not the "core" of the planet, unlike noise meshes
+    radius: 0.1
+    //cloud colour
+    color: e8effa88
+    //more explodey values, they're even more sensitive here
+    octaves: 3
+    persistence: 0.5
+    scl: 1
+    thresh: 0.43
+  }
+  {
+    type: HexSkyMesh
+    speed: 2
+    divisions: 6
+    radius: 0.11
+    color: e8effabb
+    octaves: 3
+    persistence: 0.5
+    scl: 0.9
+    thresh: 0.43
+  }
 ]

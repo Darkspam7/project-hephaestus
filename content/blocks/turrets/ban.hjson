@@ -22,7 +22,7 @@ shoot: {
 
 ammoTypes: {
     metal-shard: {
-        damage: 3
+        damage: 10
         speed: 9
         height: 15
         width: 10
